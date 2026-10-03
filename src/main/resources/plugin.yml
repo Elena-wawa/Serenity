@@ -1,7 +1,7 @@
-name: ExtraGear
+name: Serenity
 version: ${version}
-author: TheBusyBiscuit
+author: ElenAna
 depend: [Slimefun]
 
 api-version: '1.16'
-main: io.github.thebusybiscuit.extragear.ExtraGear
+main: io.github.elenawawa.serenity.Serenity
