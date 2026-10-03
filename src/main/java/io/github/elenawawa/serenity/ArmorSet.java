@@ -1,4 +1,4 @@
-package io.github.thebusybiscuit.extragear;
+package io.github.elenawawa.serenity;
 
 import javax.annotation.Nonnull;
 
