@@ -1,4 +1,4 @@
-package io.github.elena-wawa.serenity;
+package io.github.elenawawa.serenity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
