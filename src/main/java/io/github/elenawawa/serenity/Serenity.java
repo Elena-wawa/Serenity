@@ -1,4 +1,4 @@
-package io.github.thebusybiscuit.extragear;
+package io.github.elena-wawa.serenity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,13 +29,8 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.ChatUtils;
 
-/**
- * ExtraGear is a Slimefun addon that adds extra armor sets and tools
- * crafted from the various metals available in Slimefun.
- *
- * @author TheBusyBiscuit
- */
-public class ExtraGear extends JavaPlugin implements SlimefunAddon {
+
+public class Serenity extends JavaPlugin implements SlimefunAddon {
 
     private int researchId = 3300;
     private ItemGroup itemGroup;
@@ -361,7 +356,7 @@ public class ExtraGear extends JavaPlugin implements SlimefunAddon {
     @Nonnull
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/Slimefun5/ExtraGear/issues";
+        return "https://github.com/Elena-wawa/Serenity/issues";
     }
 
 }
