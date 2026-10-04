@@ -9,3 +9,20 @@ on:
 jobs:
   build:
     uses: Slimefun5/workflows/.github/workflows/ci.yml@main
+
+  upload-artifacts:
+    runs-on: ubuntu-latest
+    needs: build
+    if: always()
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: Upload to workflow
+        uses: actions/upload-artifact@v4
+        with:
+          name: serenity-build-${{ github.sha }}
+          path: artifacts/
+          retention-days: 30
