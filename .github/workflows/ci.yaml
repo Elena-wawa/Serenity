@@ -8,11 +8,24 @@ on:
 
 jobs:
   build:
+    uses: Slimefun5/workflows/.github/workflows/ci.yml@main
+
+  upload-artifacts:
     runs-on: ubuntu-latest
+    needs: build
+    if: always()
     steps:
       - uses: actions/checkout@v4
       
-      - uses: Slimefun5/workflows/.github/workflows/ci.yml@main
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+      
+      - run: chmod +x gradlew
+      
+      - run: ./gradlew shadowJar
       
       - name: Upload built JARs
         uses: actions/upload-artifact@v4
