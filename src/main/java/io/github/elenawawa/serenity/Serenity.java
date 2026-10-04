@@ -43,7 +43,7 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
         }
 
         
-        itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("serenity", "serene"), CustomItemStack.create(MaterialCompat.safe(XMaterial.AMYTHEST), "\u00a76Serenity"), 1).setTheme("Misc");
+        itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("serenity", "serene"), CustomItemStack.create(MaterialCompat.safe(XMaterial.BLACK_STAINED_GLASS), "\u00a76Serenity"), 1).setTheme("Misc");
 
         registerSword(XMaterial.IRON_SWORD, "COBALT", SlimefunItems.COBALT_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 7), new Pair<>(Enchantment.DURABILITY, 7)));
         registerArmor(ArmorSet.IRON, "COBALT", SlimefunItems.COBALT_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 7), new Pair<>(Enchantment.DURABILITY, 7)));
