@@ -43,46 +43,7 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
         }
 
         
-        itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("extragear", "items"), CustomItemStack.create(MaterialCompat.safe(XMaterial.DIAMOND_SWORD), "\u00a76ExtraGear"), 1).setTheme("tools");
-
-        registerSword(XMaterial.IRON_SWORD, "COPPER", SlimefunItems.COPPER_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_UNDEAD, 2)));
-        registerArmor(ArmorSet.LEATHER, "COPPER", SlimefunItems.COPPER_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_EXPLOSIONS, 2)));
-
-        registerSword(XMaterial.IRON_SWORD, "TIN", SlimefunItems.TIN_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 1)));
-        registerArmor(ArmorSet.IRON, "TIN", SlimefunItems.TIN_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_EXPLOSIONS, 3)));
-
-        registerSword(XMaterial.IRON_SWORD, "SILVER", SlimefunItems.SILVER_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 2)));
-        registerArmor(ArmorSet.IRON, "SILVER", SlimefunItems.SILVER_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 2)));
-
-        registerSword(XMaterial.IRON_SWORD, "ALUMINUM", SlimefunItems.ALUMINUM_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ARTHROPODS, 3)));
-        registerArmor(ArmorSet.IRON, "ALUMINUM", SlimefunItems.ALUMINUM_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_EXPLOSIONS, 2), new Pair<>(Enchantment.DURABILITY, 2)));
-
-        registerSword(XMaterial.IRON_SWORD, "LEAD", SlimefunItems.LEAD_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 3), new Pair<>(Enchantment.DURABILITY, 8)));
-        registerArmor(ArmorSet.IRON, "LEAD", SlimefunItems.LEAD_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 3), new Pair<>(Enchantment.DURABILITY, 8)));
-
-        registerSword(XMaterial.IRON_SWORD, "ZINC", SlimefunItems.ZINC_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 2)));
-        registerArmor(ArmorSet.IRON, "ZINC", SlimefunItems.ZINC_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 3)));
-
-        registerSword(XMaterial.IRON_SWORD, "MAGNESIUM", SlimefunItems.MAGNESIUM_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 2), new Pair<>(Enchantment.DURABILITY, 5)));
-        registerArmor(ArmorSet.IRON, "MAGNESIUM", SlimefunItems.MAGNESIUM_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 2), new Pair<>(Enchantment.DURABILITY, 5)));
-
-        registerSword(XMaterial.IRON_SWORD, "STEEL", SlimefunItems.STEEL_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 5), new Pair<>(Enchantment.DURABILITY, 6)));
-        registerArmor(ArmorSet.IRON, "STEEL", SlimefunItems.STEEL_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 3), new Pair<>(Enchantment.DURABILITY, 4)));
-
-        registerSword(XMaterial.IRON_SWORD, "BRONZE", SlimefunItems.BRONZE_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 3), new Pair<>(Enchantment.DURABILITY, 6)));
-        registerSword(XMaterial.IRON_SWORD, "DURALUMIN", SlimefunItems.DURALUMIN_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 3), new Pair<>(Enchantment.DURABILITY, 6)));
-        registerSword(XMaterial.IRON_SWORD, "BILLON", SlimefunItems.BILLON_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 4), new Pair<>(Enchantment.DURABILITY, 5)));
-        registerSword(XMaterial.IRON_SWORD, "BRASS", SlimefunItems.BRASS_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_UNDEAD, 4), new Pair<>(Enchantment.DURABILITY, 6)));
-        registerSword(XMaterial.IRON_SWORD, "ALUMINUM_BRASS", SlimefunItems.ALUMINUM_BRASS_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ARTHROPODS, 4), new Pair<>(Enchantment.DURABILITY, 4)));
-        registerSword(XMaterial.IRON_SWORD, "ALUMINUM_BRONZE", SlimefunItems.ALUMINUM_BRONZE_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ARTHROPODS, 4), new Pair<>(Enchantment.DURABILITY, 5)));
-        registerSword(XMaterial.IRON_SWORD, "CORINTHIAN_BRONZE", SlimefunItems.CORINTHIAN_BRONZE_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 5), new Pair<>(Enchantment.DURABILITY, 5)));
-        registerSword(XMaterial.IRON_SWORD, "SOLDER", SlimefunItems.SOLDER_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 4), new Pair<>(Enchantment.DURABILITY, 6)));
-        registerSword(XMaterial.IRON_SWORD, "DAMASCUS_STEEL", SlimefunItems.DAMASCUS_STEEL_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 6), new Pair<>(Enchantment.DURABILITY, 7)));
-        registerSword(XMaterial.IRON_SWORD, "HARDENED", SlimefunItems.HARDENED_METAL_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 7), new Pair<>(Enchantment.DURABILITY, 10)));
-        registerSword(XMaterial.IRON_SWORD, "REINFORCED", SlimefunItems.REINFORCED_ALLOY_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 8), new Pair<>(Enchantment.DURABILITY, 8)));
-        registerSword(XMaterial.IRON_SWORD, "FERROSILICON", SlimefunItems.FERROSILICON, Arrays.asList(new Pair<>(Enchantment.DAMAGE_UNDEAD, 8), new Pair<>(Enchantment.DURABILITY, 4)));
-        registerSword(XMaterial.GOLDEN_SWORD, "GILDED_IRON", SlimefunItems.GILDED_IRON, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ARTHROPODS, 8), new Pair<>(Enchantment.DURABILITY, 10)));
-        registerSword(XMaterial.IRON_SWORD, "NICKEL", SlimefunItems.NICKEL_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 6), new Pair<>(Enchantment.DURABILITY, 5)));
+        itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("serenity", "serene"), CustomItemStack.create(MaterialCompat.safe(XMaterial.AMYTHEST), "\u00a76Serenity"), 1).setTheme("Misc");
 
         registerSword(XMaterial.IRON_SWORD, "COBALT", SlimefunItems.COBALT_INGOT, Arrays.asList(new Pair<>(Enchantment.DAMAGE_ALL, 7), new Pair<>(Enchantment.DURABILITY, 7)));
         registerArmor(ArmorSet.IRON, "COBALT", SlimefunItems.COBALT_INGOT, Arrays.asList(new Pair<>(Enchantment.PROTECTION_ENVIRONMENTAL, 7), new Pair<>(Enchantment.DURABILITY, 7)));
@@ -133,8 +94,8 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
     @Nonnull
     private String topicDisplayName(@Nonnull String groupKey) {
         switch (groupKey) {
-            case "items": return "Extra Gear: Tools & Armor";
-            default: return "Extra Gear";
+            case "items": return "Serenity";
+            default: return "Serenity";
         }
     }
 
@@ -149,8 +110,8 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
     @Nonnull
     private String topicTagline(@Nonnull String groupKey) {
         switch (groupKey) {
-            case "items": return "&7Metal swords & full armor sets";
-            default: return "&7Extra tools and armor sets";
+            case "items": return "penis";
+            default: return "didy";
         }
     }
 
@@ -159,29 +120,11 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
         switch (groupKey) {
             case "items":
                 return Arrays.asList(
-                    "&7ExtraGear forges weapons and armor from the many",
-                    "&7metals and alloys Slimefun adds to the game.",
-                    "",
-                    "&7&lSwords &7are crafted in the &bEnhanced Crafting",
-                    "&7Table&7 from two ingots and a stick, in the usual",
-                    "&7sword pattern. Each metal yields a sword with its",
-                    "&7own pre-applied enchantments, scaling from soft",
-                    "&7Copper up to powerful Reinforced and Cobalt blades.",
-                    "",
-                    "&7&lArmor sets &7are crafted in the &bArmor Forge&7",
-                    "&7as helmet, chestplate, leggings and boots. Every",
-                    "&7piece carries built-in protection enchantments,",
-                    "&7so a full set is far tougher than its vanilla base.",
-                    "",
-                    "&7Because the enchantments are baked in, the gear",
-                    "&7cannot be disenchanted - it is ready to wear or",
-                    "&7swing the moment it is crafted.",
-                    "",
-                    "&7Click an item below for its recipe & details."
+                    "no"
                 );
             default:
                 return Arrays.asList(
-                    "&7Extra tools and armor sets forged from metals.",
+                    "ok",
                     "",
                     "&7Click an item below for its recipe & details."
                 );
@@ -191,74 +134,11 @@ public class Serenity extends JavaPlugin implements SlimefunAddon {
     @Nullable
     private List<String> describeItem(@Nonnull String itemId) {
         switch (itemId) {
-            case "COPPER_SWORD":
-                return Arrays.asList(
-                    "&7An entry-level blade forged from Copper.",
-                    "&7Carries &bSmite II&7, making it handy for clearing",
-                    "&7out early-game undead such as zombies and skeletons."
-                );
-            case "TIN_SWORD":
-            case "ZINC_SWORD":
-            case "SILVER_SWORD":
-                return Arrays.asList(
-                    "&7A light, cheap sword forged from a base metal.",
-                    "&7Comes pre-enchanted with &bSharpness&7 for a small",
-                    "&7but reliable damage boost over a vanilla blade."
-                );
-            case "ALUMINUM_SWORD":
-            case "ALUMINUM_BRASS_SWORD":
-            case "ALUMINUM_BRONZE_SWORD":
-                return Arrays.asList(
-                    "&7An aluminium-based blade built for pest control.",
-                    "&7Carries &bBane of Arthropods&7, tearing through",
-                    "&7spiders, silverfish and other bugs with ease."
-                );
-            case "MAGNESIUM_SWORD":
-            case "BRONZE_SWORD":
-            case "DURALUMIN_SWORD":
-            case "BILLON_SWORD":
-            case "SOLDER_SWORD":
-                return Arrays.asList(
-                    "&7A solid mid-tier alloy sword.",
-                    "&7Pre-enchanted with &bSharpness&7 and &bUnbreaking&7,",
-                    "&7balancing extra damage with a longer lifespan."
-                );
-            case "LEAD_SWORD":
-            case "STEEL_SWORD":
-            case "CORINTHIAN_BRONZE_SWORD":
-            case "NICKEL_SWORD":
-                return Arrays.asList(
-                    "&7A heavy, dependable alloy blade.",
-                    "&7Combines a strong &bSharpness&7 enchantment with",
-                    "&bUnbreaking&7 for sustained combat use."
-                );
-            case "BRASS_SWORD":
-            case "FERROSILICON_SWORD":
-                return Arrays.asList(
-                    "&7A specialist anti-undead blade.",
-                    "&7Carries powerful &bSmite&7 plus &bUnbreaking&7,",
-                    "&7devastating against zombies, skeletons and wither",
-                    "&7skeletons in the Nether."
-                );
-            case "GILDED_IRON_SWORD":
-                return Arrays.asList(
-                    "&7A gilded blade with an ornate golden edge.",
-                    "&7Carries strong &bBane of Arthropods&7 and high",
-                    "&bUnbreaking&7, lasting far longer than gold should."
-                );
-            case "DAMASCUS_STEEL_SWORD":
-                return Arrays.asList(
-                    "&7A patterned blade folded from Damascus Steel.",
-                    "&7Carries heavy &bSharpness&7 and &bUnbreaking&7,",
-                    "&7a true upper-tier weapon."
-                );
-            case "HARDENED_SWORD":
-            case "REINFORCED_SWORD":
+            
             case "COBALT_SWORD":
                 return Arrays.asList(
-                    "&7A top-tier blade forged from a hardened alloy.",
-                    "&7Carries some of the strongest &bSharpness&7 and",
-                    "&bUnbreaking&7 in ExtraGear - a late-game powerhouse."
+                    "big",
+                    "penis"
                 );
             default:
                 break;
