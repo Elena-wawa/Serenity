@@ -5,17 +5,20 @@ plugins {
 }
 
 group = "io.github.elenawawa"
-description = "ExtraGear is a Slimefun addon that adds extra armor sets and tools."
+description = "Serenity"
 
 apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/refs/heads/main/slimefun-addon.gradle")
 
 dependencies {
     githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
+    githubImplementation("Slimefun5:InfinityLib:v1.3.13")
     implementation("org.bstats:bstats-bukkit:2.2.1")
 }
 
 tasks {
     shadowJar {
         relocate("org.bstats", "extragear.libs.bstats")
+        relocate("io.github.mooy1.infinitylib", "io.github.mooy1.infinityexpansion.infinitylib")
+        minimize()
     }
 }
