@@ -1,4 +1,4 @@
-package io.github.mooy1.infinityexpansion;
+package io.github.elenawawa.serenity;
 
 import javax.annotation.Nonnull;
 
